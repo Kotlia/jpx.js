@@ -1,0 +1,44 @@
+{
+  "name": "jpx.js",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/Kotlia/jpx.js.git",
+  "author": "Shun Ueda <62182668+Kotlia@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src/*.ts --fix",
+    "pretty": "prettier src/*.ts --write",
+    "test": "tsc && node test",
+    "start": "ts-node src"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "node node_modules/lint-staged/bin/lint-staged.js"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npm run pretty",
+      "npm run lint",
+      "npm run pretty"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.20.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^5.1.1",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "@types/node-fetch": "^2.5.8",
+    "node-fetch": "^2.6.1",
+    "tslib": "^2.1.0"
+  }
+}
