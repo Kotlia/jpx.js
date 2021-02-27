@@ -11,4 +11,8 @@ export default class Jpx {
       `${this.url.base}indices_stock_price${day ? `.${day}` : ""}.txt`
     ).then((r) => r.json()) as Promise<Indices>;
   }
+
+  static unformat(formattedNumber: string) {
+    return formattedNumber.replace(/,/g, "");
+  }
 }
