@@ -7,6 +7,9 @@ export default class Jpx {
   };
 
   static daysAgo(day = 0) {
+    if (day > 5) {
+      throw new Error("The maximum number of days to go back is 5 days.");
+    }
     return fetch(
       `${this.url.base}indices_stock_price${day ? `.${day}` : ""}.txt`
     ).then((r) => r.json()) as Promise<Indices>;
