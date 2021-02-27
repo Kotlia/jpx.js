@@ -1,2 +1,2 @@
-import Jpx from "./Jpx";
-export = Jpx;
+import Jpx from './Jpx'
+export = Jpx

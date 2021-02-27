@@ -1,0 +1,7 @@
+.idea
+node_modules
+src
+test
+.eslintrc.yml
+.gitignore
+.prettierrc.toml
