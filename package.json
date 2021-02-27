@@ -34,10 +34,10 @@
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.2"
+    "typescript": "^4.2.2",
+    "@types/node-fetch": "^2.5.8"
   },
   "dependencies": {
-    "@types/node-fetch": "^2.5.8",
     "node-fetch": "^2.6.1",
     "tslib": "^2.1.0"
   }
