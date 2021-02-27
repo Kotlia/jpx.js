@@ -12,8 +12,9 @@ plugins:
 rules: {
   require-jsdoc: off,
   "indent": [ 2, "tab" ],
-  "no-mixed-spaces-and-tabs": [2, "smart-tabs"],
+  "no-mixed-spaces-and-tabs": off,
   "max-len": [2, 200],
   "no-tabs": off,
   "new-cap": off,
+  semi: off
 }

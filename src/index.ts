@@ -1,2 +1,2 @@
-import Tsx from './Tsx'
-export = Tsx
+import Jpx from "./Jpx";
+export = Jpx;
